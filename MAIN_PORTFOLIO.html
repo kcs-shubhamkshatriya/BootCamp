@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="wow.min.js" type="text/javascript"></script>
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        new WOW().init();
+   </script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" language="javascript"></script>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+            background-color: rgba(rgb(199, 178, 178), green, blue, alpha);
+            box-shadow: 0px 0px 3px white;
+            border-radius: 5px;
+        }
+        h2{
+            font-family: 'Noto Serif Display', serif;
+        }
+        #f1{
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        #list{
+            text-align:justify; 
+            font-size: 20px;
+        }
+        #edu{
+            padding:10px;
+	        background-color:rgba(7, 6, 6, 0.76);
+	        border-radius:8px;
+	        box-shadow:0px 0px 3px blue; 
+                   
+        }
+        #edutable{
+            font-size: 20px;
+
+        }
+        #Skills
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Qualifications_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#ffffff;
+	            }
+                #SkillsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #SkillsRow div.col-lg-offset-5
+	            {
+	                padding:10px;
+	                background-color:rgb(20, 19, 19, 0.8);
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                opacity:0.8;
+	            }
+	            #Skills table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Skills table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Skills table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+                #Qualifications
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Qualifications_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#ffffff;
+	            }
+	            #QualificationsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #QualificationsRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+	                background-color:rgba(20, 19, 19, 0.8);
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                
+	            }
+	            #Qualifications table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Qualifications table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Qualifications table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            #Noncollegiate
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Qualifications_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#ffffff;
+	            }
+	            #NoncollegiateRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #NoncollegiateRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+	                background-color:rgba(20, 19, 19, 0.8);
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                opacity:0.8;
+	            }
+	            #Noncollegiate table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Noncollegiate table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Noncollegiate table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+                #PortfolioRow h1
+	            {
+	                color:#000000;
+	                font-family:Monotype Corsiva;
+	            }  
+	            
+	            #Portfolio div.col-lg-3
+	            {
+	                margin-bottom:20px;
+	            }
+                #Portfolio
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:#fff;
+	                font-size:20px;
+	                
+	            } .ContainerImage
+	            {
+                    position: relative;
+                    width:100%;
+                    height: 200px;
+                } .ContainerImage:hover .overlay 
+                {
+                  opacity:1;
+                }
+				.ContainerImage:hover .image 
+                {
+                    -webkit-transform:translate(50px,50px);
+                   -moz-transform:translate(50px,500px);
+                    -ms-transform:translate(50px,50px);
+                     -o-transform:translate(50px,50px);
+                        transform:translate(50px,50px);               
+                 }
+                .overlay 
+                {
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  top: 0;
+                  right:0;
+                  background:rgba(0,0,0,0.7);
+                  overflow: hidden;
+                  height: 100%;
+                  width:100%;
+                  opacity:0;
+                  transition:0.5s;
+                } .ContainerImage
+	            {
+                    position: relative;
+                    width:100%;
+                }
+                .image 
+                {
+                  display: block;
+                  width: 100%;
+                  height: 200px;
+				  transition:1s;
+                }
+                #free{
+                    padding-top: 20px;
+                    margin-bottom: 10px;
+                }
+             
+               
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a id="len1" class="hoverable" href="#homerpw">Intro</a></li>
+              <li><a id="len2" class="hoverable" href="#techsumm">Technical Summary</a></li>
+              <li><a id="len3" class="hoverable" href="#Qualifications">Qualification</a></li>
+              <li><a id="len4" class="hoverable" href="#Skills">Skills</a></li>
+              <li><a id="len4" class="hoverable" href="#Noncollegiate">Non Collegiate</a></li>
+              <li><a id="len4" class="hoverable" href="#Portfolio">Portfolio</a></li>
+              <li><a id="len4" class="hoverable" href="#free">Freelancing Role</a></li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container wow bounceIn" data-wow-duration="3s">
+
+          <div class="row" id="homerow">
+
+           <div class="col-md-offset-3 col-md-6" id="image" wow slideInDown data-wow-duration="3s">
+
+               <img src="user.png" width="50%" height="50%" alt="">
+               <h2 style="font-style: book antiqua bold italic;">Kshatriya Shubham</h2>
+               <p>I am Trainne At Krish CompuSoft Services. I Am Enthusiastic In Data Science & In Pyhton Technology. </p><hr>
+               <div class="col-md-6">
+                <span><i class="fa fa-phone"></i>&nbsp;&nbsp;+91 8200205157</span>
+            </div>
+            <div class="col-md-6"><span><i class="fa fa-envelope" ></i>&nbsp; &nbsp;Kshatriyashubham5@gmail.com</span></div><br><hr>
+            <div class="col-md-12"><span><i class="fa fa-globe" ></i>&nbsp;&nbsp;Ahmedabad , Gujarat India</span>
+            </div><br><hr>
+                <div class="col-md-offset-4 col-md-4"><span><i class="fa fa-facebook" id="f1"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram" id="f1"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-twitter" id="f1"></i></span></div>
+        </div>   
+           
+          </div>
+      </div><br>
+      <div class="container" id="techsumm">
+          <div class="row">
+              <div class="col-md-offset-1 col-md-10 wow fadeInUp" data-wow-duration="5s">
+                 <br><br> <br><br> <br>
+                 <h2><i class="fa fa-gear" id="f1"></i>&nbsp;&nbsp;&nbsp; Technical Summary</h2><hr>
+                 <ul id="list">
+                     <li>I have been graduated from Amiraj College Of Engineering & Technology Located in Sanad. I had been in B.E Degree of Computer Science Engineering.</li>
+                     <li>I have Knowledge Of Python And currently Learning in Data Analysis. I also have Knowledge of Power BI of Intermediate Level.</li>
+                     <li>I also have Deep Knowledge In Html, Css & Wordpress.   </li>
+                     <li>Currently Learning All language of Basic Level.</li>
+                     <li>Result oriented, Self Driven, Highly Motivated, Smart & Hungry to learn new technologies, Methodologies, Strategies & Processes.
+                     </li>
+                 </ul>
+              </div>
+          </div>
+      </div><br><br>
+      <div id="Qualifications" class="container-fluid">
+        <div class="row" id="QualificationsRow">
+             <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+                  <center><br /><h2><i class="fa fa-book"></i> Education Qualification</h2><hr></center>
+                  <table class="">
+                      <tr>
+                          <td>Year<br/>2018 - 2022</td>
+                          <td>B.E In Computer Science From Gujarat Technological University.</td>
+                      </tr>
+                      <tr>
+                          <td>Year<br />2017 - 2018</td>
+                          <td>10 + 2 Mathematics From P.B.D Joshi Higher Secondary School.</td>
+                      </tr>
+                      <tr>
+                          <td>Year<br />2016 - 2017</td>
+                          <td>S.S.C From P.B.D Joshi Higher Secondary School.</td>
+                      </tr>
+                  </table>
+             </div>
+        </div>
+   </div>
+      <div id="Skills" class="container-fluid">
+        <div class="row" id="SkillsRow">
+             <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-lg-6 col-md-6 col-sm-6 wow slideInRight" data-wow-duration="3s">
+                  <center><br /><h2><i class="fa fa-gears"></i> Technical Skills</h2><hr /></center>
+                  <table>
+                      <tr>
+                          <td>Programming Languages:</td>
+                          <td>Python, HTML, CSS, JavaScript, Bootstrap, jquery.</td>
+                      </tr>
+                      <tr>
+                          <td>Tools & Technologies:</td>
+                          <td>Data Analysis, SEO, Website Developer.</td>
+                      </tr>
+                      <tr>
+                          <td>Databases:</td>
+                          <td> Microsoft SQL Server, Microsoft Access.</td>
+                      </tr>
+                      <tr>
+                          <td>Protocols:</td>
+                          <td>SMTP, FTP, PO3, IMAP.</td>
+                      </tr>
+                      <tr>
+                          <td>Operating Systems:</td>
+                          <td>Microsoft Windows.</td>
+                      </tr>
+                      
+                  </table>
+             </div>
+        </div>
+   </div>
+   <div id="Noncollegiate" class="container-fluid">
+    <div class="row" id="NoncollegiateRow">
+         <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+              <center><br /><h2><i class="fa fa-thumbs-up"></i> &nbsp;Non Collegiate Activities</h2><hr /></center>
+              <table>
+                <tr>
+                    <td>Year 2019</td>
+                    <td>1<sup>st</sup> Prize in Box Cricket Organized By Nirma University</td>
+                </tr>   
+                  <tr>
+                      <td>Year 2018</td>
+                      <td>Played Zonal Level In Volleyball.</td>
+                  </tr>
+                  <tr>
+                      <td>Year 2017</td>
+                      <td>District Level In Cricket For Ahmedabad.</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>Year 2020</td>
+                      <td>1<sup>st</sup> Prize in Nation Level Techfest in Box Cricket Organized By <abbr title="Amiraj College Of Engineering & technology">ACET.</abbr> </td>
+                  </tr>
+              </table>
+         </div>
+    </div>
+</div>
+<div id="Portfolio" class="container-fluid wow bounceIn" data-wow-duration="3s">
+    <div class="row" id="PortfolioRow">
+         <center><br /><h2><i class="fa fa-object-group"></i> My Portfolio</h2><hr /></center>
+         <div class="col-lg-6 col-md-6 col-sm-4 col-xs-12">
+              <div class="ContainerImage">
+                  <img src="project1.png" alt="Kshatriya Shubham" class="image" />
+                  <div class="overlay">
+                       <div class="text">Project 1</div>
+                  </div>
+              </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-sm-4">
+              <div class="ContainerImage">
+                  <img src="project2.png" alt="Kshatriya Shubham" class="image" />
+                  <div class="overlay">
+                       <div class="text">Project 2</div>
+                  </div>
+              </div>
+         </div>
+        
+         
+    </div>
+</div>
+   
+<div class="container" id="free">
+    <div class="row" id="freerow">
+        <h2><i class="fa fa-laptop"></i>&nbsp;My FreeLancing Role</h2><hr>
+        <div class="col-md-3" style="padding-top: 5px;">
+            <i class="fa fa-thumbs-up" style="font-size: 75px; ;"></i><br> <h3>50+ Projects</h3> 
+        </div>
+        <div class="col-md-3" style="padding-top: 5px;">
+            <i class="fa fa-users" style="font-size: 75px; "></i><br> <h3>15+ Clients</h3> 
+        </div>
+        <div class="col-md-3" style="padding-top: 5px;">
+            <i class="fa fa-smile-o" style="font-size: 75px; "></i><br> <h3>2+ Year Experience</h3> 
+        </div>
+        <div class="col-md-3" style="padding-top: 5px;">
+            <i class="fa fa-list" style="font-size: 75px; "></i><br> <h3>15K+ Line Of Code</h3> 
+        </div>
+    </div>
+</div>
+</body>
+</html>
